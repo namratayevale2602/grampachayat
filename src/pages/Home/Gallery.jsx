@@ -188,7 +188,7 @@ const Gallery = () => {
                 {/* View More Button */}
                 <motion.button
                   onClick={() => openAlbum(album)}
-                  className="w-full bg-green-50 text-[#5D2B0F] py-2 rounded-lg font-semibold hover:bg-green-100 transition-colors duration-300 flex items-center justify-center space-x-2"
+                  className="w-full text-[#5D2B0F] py-2 rounded-lg font-semibold flex items-center justify-center space-x-2"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >
@@ -231,7 +231,7 @@ const Gallery = () => {
                 onClick={(e) => e.stopPropagation()}
               >
                 {/* Modal Header */}
-                <div className="bg-linear-to-r from-green-500 to-green-600 p-6 text-white">
+                <div className="bg-[#8B4513] p-6 text-white">
                   <div className="flex items-center justify-between">
                     <div>
                       <h3 className="text-2xl font-bold">
@@ -241,7 +241,7 @@ const Gallery = () => {
                     </div>
                     <button
                       onClick={() => setSelectedAlbum(null)}
-                      className="w-8 h-8 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-colors duration-200"
+                      className="w-8 h-8 bg-black bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-colors duration-200"
                     >
                       <svg
                         className="w-4 h-4"
@@ -330,7 +330,7 @@ const Gallery = () => {
                         onClick={() => setCurrentImageIndex(index)}
                         className={`shrink-0 w-16 h-16 rounded-lg overflow-hidden border-2 ${
                           currentImageIndex === index
-                            ? "border-green-500"
+                            ? "border-[#8B4513]"
                             : "border-gray-300"
                         }`}
                         whileHover={{ scale: 1.1 }}

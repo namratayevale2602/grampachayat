@@ -55,7 +55,7 @@ const Banner = () => {
   };
 
   return (
-    <div className="relative w-full h-[90vh] min-h-[500px] overflow-hidden">
+    <div className="relative w-full h-[30vh] min-h-[100px] md:h-[90vh] md:min-h-[500px] overflow-hidden">
       {/* Main Carousel Container */}
       <div className="relative w-full h-full">
         <AnimatePresence initial={false} custom={1}>

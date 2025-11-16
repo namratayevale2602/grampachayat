@@ -271,7 +271,7 @@ const Functions = () => {
                     </div>
                     <button
                       onClick={() => setSelectedFunction(null)}
-                      className="w-8 h-8 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-colors duration-200"
+                      className="w-8 h-8 bg-black bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-colors duration-200"
                     >
                       <svg
                         className="w-4 h-4"
@@ -309,28 +309,10 @@ const Functions = () => {
                           key={index}
                           className="flex items-center space-x-3 p-3 bg-blue-50 rounded-lg"
                         >
-                          <div className="w-2 h-2 bg-blue-500 rounded-full shrink-0"></div>
+                          <div className="w-2 h-2 bg-[#A05A2B] rounded-full shrink-0"></div>
                           <span className="text-gray-700">{feature}</span>
                         </div>
                       ))}
-                    </div>
-
-                    <h4 className="text-xl font-semibold text-gray-800 mb-4">
-                      संपर्क माहिती
-                    </h4>
-                    <div className="bg-green-50 p-4 rounded-lg border border-green-200">
-                      <p className="text-gray-700 font-semibold">
-                        {selectedFunction.contactPerson}
-                      </p>
-                      <p className="text-gray-600">{selectedFunction.phone}</p>
-                      <div className="flex space-x-3 mt-3">
-                        <button className="bg-blue-500 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-600 transition-colors duration-300">
-                          फोन करा
-                        </button>
-                        <button className="bg-green-500 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-green-600 transition-colors duration-300">
-                          संदेश पाठवा
-                        </button>
-                      </div>
                     </div>
                   </div>
                 </div>
